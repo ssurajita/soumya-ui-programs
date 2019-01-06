@@ -19,3 +19,5 @@ function firstNonRepeatingChar(str){
   }
  }
 }
+
+firstNonRepeatingChar(str);
