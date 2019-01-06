@@ -1,6 +1,6 @@
 /** Given a string, find its first non-repeating character **/
 
-var str = geeksforgeeks;
+var str = "geeksforgeeks";
 var obj = {};
 var arr = str.split("");
 function firstNonRepeatingChar(str){
