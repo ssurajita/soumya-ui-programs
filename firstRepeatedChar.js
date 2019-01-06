@@ -1,7 +1,7 @@
 
 /** Given a string, find its first repeating character **/
 
-var str = geeksforeeks;
+var str = "geeksforeeks";
 var obj = {};
 var arr = str.split("");
 function firstRepeatingChar(str){
