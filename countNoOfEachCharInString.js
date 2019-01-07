@@ -10,3 +10,5 @@ function countNoOfEachCharInString(str){
     }
     console.log(obj);
 }
+
+countNoOfEachCharInString("geekforgeeks");
