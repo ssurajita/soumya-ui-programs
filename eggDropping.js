@@ -1,3 +1,5 @@
+function max(a,b){ return (a > b)? a: b; }
+
 function eggDrop(e,f){
   //e eggs , f floors
   
@@ -8,8 +10,10 @@ function eggDrop(e,f){
   var x,res;
   
   for(x=1;x<=f;x++){
-  
+    res = max(eggDrop(e-1,x-1),eggDrop(e,f-x));
+    if(res<min)min=res;
   }
+  return min+1;
 }
 
 
