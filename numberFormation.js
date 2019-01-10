@@ -1,3 +1,35 @@
+
+const makeUniqPermutations = (size, options) => {
+    if (size > options.length) {
+        throw new Error('Cannot make uniq permutations with that size and options');
+    }
+
+    if (size === 0) {
+	return [''];
+    }
+
+    const permutations = options.reduce((acc, option, index) => {
+	const restSize = size - 1;
+
+        const restOptions = [
+            ...options.slice(0, index),
+            ...options.slice(index + 1),
+        ];
+
+	const restPermutations = makeUniqPermutations(restSize, restOptions);
+	const newPermutations = restPermutations.map(permutation => `${option}${permutation}`);
+
+	return [...acc, ...newPermutations];
+    }, [])
+
+    return permutations;
+}
+
+const options = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+const size = 4;
+
+console.log(makeUniqPermutations(size, options));
+
 /* function factorial(len) 
 { 
     var fact = 1; 
