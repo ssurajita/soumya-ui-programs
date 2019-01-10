@@ -36,4 +36,5 @@ function numberFormation(arr,len){
 
 possibleCombinators("soumya");
 
+https://www.geeksforgeeks.org/sum-numbers-can-formed-permutations-n-digits/
 
