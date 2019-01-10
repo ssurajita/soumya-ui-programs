@@ -1,4 +1,4 @@
-function factorial(len) 
+/* function factorial(len) 
 { 
     var fact = 1; 
     if (len == 0 || len == 1) 
@@ -22,6 +22,18 @@ function numberFormation(arr,len){
         j *= 10; 
    }   
     return output; 
-}
+} */
+  function possibleCombinators(str){
+          var i, j, result = [];
+          for (i = 0; i < str.length; i++) {
+            for (j = i + 1; j < str.length + 1; j++) {
+               result.push(str.slice(i, j));
+            }
+          }
+         alert(result);
+  }
 
-numberFormation([1,2,3],3);
+
+possibleCombinators("soumya");
+
+
