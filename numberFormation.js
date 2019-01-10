@@ -1,3 +1,4 @@
+https://stackoverflow.com/questions/49652068/creating-an-array-of-all-unique-4-digit-numbers-that-can-be-made-from-the-number
 /* function factorial(len) 
 { 
     var fact = 1; 
